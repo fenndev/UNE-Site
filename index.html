@@ -20,10 +20,39 @@
             <p class="photo-credit">Logo Courtesy of <a href="https://1000logos.net/allpng/">1000 Logos</a></p>
           </div>
       </aside>
-      <footer class="sign-up-foot">
+      <main>
+        <div class="intro-text">
+          <h2>Serve your planet today!</h2>
+          <p>Enlist with the Earth Defense Force and become part of something bigger. As we reach out to the stars, we must strive to protect our home planet. People like you are needed to ensure the safety of all of our peoples.</p>
+        </div>
+        <form class="sign-up" id="sign-up">
+          <div class="form-title">
+            <h3>Enlist Today!</h3>
+          </div>
+          <div class="form-body">
+            <div class="form-row">
+              <label for="first-name">First Name</label>
+              <input type="text" name="first-name" id="first-name"/>
+              <label for="last-name">Last Name</label>
+              <input type="text" name="last-name" id="last-name"/>
+            </div>
+            <div class="form-row">
+              <label for="user-mail">Email</label>
+              <input type="text" name="user-mail" id="user-mail"/>
+              <label for="user-phone">Phone Number</label>
+              <input type="tel" name="user-phone" id="user-phone" pattern=""/>
+            </div>
+            <div class="form-row">
+              <label for="user-password">Password</label>
+              <input type="password" name="user-password" id="user-password"/>
+              <label for="confirmed-password">Confirm Password</label>
+              <input type="password" name="" id="confirmed-password"/>
+            </div>
+          </div>
+        </form>
         <button type="submit" form="sign-up-form">Enlist</button>
         <p>Already enlisted? <a href="#">Log In</a></p>
-      </footer>
+      </main>
     </div>
   </body>
 </html>
