@@ -3,7 +3,15 @@
 :root {
   /* Global Variables */
 
+  --une-blue: #009edb;
+  --une-white: #F2F2F2;
+  --une-dark-grey: #333333;
+  --une-grey: #4D4D4D;
+  --une-logo-font: 'Roboto Condensed', sans-serif;
+  --une-body-font: 'Roboto', sans-serif;
+
   /* Resets */
+  font-size: 62.5%;
   box-sizing: border-box;
 }
 
@@ -16,6 +24,10 @@ body {
   height: 100vh;
   width: 100vw;
   overflow: hidden;
+  font-size: 1.4rem;
+  font-family: var(--une-body-font);
+  color: var(--une-dark-grey);
+  background-color: var(--une-white);
 }
 
 .container {
@@ -30,11 +42,10 @@ body {
   flex: 4 0 25vw;
   position: relative;
   height: 100%;
-  background: url(img/jeremy-thomas-E0AHdsENmDg-unsplash.jpg) no-repeat;
-  background-size: cover;
+  background-color: var(--une-blue);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -45,22 +56,29 @@ body {
   display: flex;
   justify-content: center;
   text-align: center;
-  color: white;
 }
 
 .une-logo {
-  max-height: 100px;
+  max-height: 150px;
   width: auto;
+  color: black;
+}
+
+.une-text {
+    color: var(--une-white);
+    font-family: var(--une-logo-font);
+    font-size: 2.6rem;
+    font-weight: bold;
 }
 
 .transparent {
   position: absolute;
   height: 30%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 50%);
+  background-color: var(--une-dark-grey);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   top: 10%;
 }
@@ -73,19 +91,11 @@ body {
   text-align: center;
 }
 
-.photo-credit {
-  color: white;
-}
-
-.photo-credit a {
-  color: white;
+.photo-credit, .photo-credit a {
+  color: var(--une-white);
 }
 
 /* Main Content */
-
-.sign-up {
-  flex: 1 2 auto;
-}
 
 .sign-up {
   display: flex;
