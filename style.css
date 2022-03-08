@@ -52,6 +52,7 @@ body {
 /* Logo & Overlay */
 
 .logo-section {
+    width: 100%;
   flex: 2 0 auto;
   display: flex;
   justify-content: center;
@@ -61,13 +62,13 @@ body {
 .une-logo {
   max-height: 150px;
   width: auto;
-  color: black;
+  margin-bottom: 2rem;
 }
 
 .une-text {
     color: var(--une-white);
     font-family: var(--une-logo-font);
-    font-size: 2.6rem;
+    font-size: 3rem;
     font-weight: bold;
 }
 
@@ -78,7 +79,7 @@ body {
   background-color: var(--une-dark-grey);
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   top: 10%;
 }
@@ -97,12 +98,39 @@ body {
 
 /* Main Content */
 
+main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-container {
+
+}
+
+.form-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
 .sign-up {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  background-color: gray;
+  background-color: var(--une-grey);
+}
+
+.form-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    display: flex;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
 }
 
 /* Footer */
@@ -135,9 +163,4 @@ footer {
   display: flex;
   gap: 8vh;
   margin-left: 4vh;
-}
-
-input,
-label {
-  display: block;
 } */
