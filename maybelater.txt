@@ -1,0 +1,46 @@
+<label for="user-country">Country</label>
+<select name="user-country" id="user-country">
+                  <optgroup label="North America">
+                      <option value="us">United States</option>
+                      <option value="cananada</option>
+                      <option value="mexico">Mexico</option>
+                  </optgroup>
+                  <optgroup label="Europe">
+                      <option value="uk">United Kingdom</option>
+                      <option value="france">France</option>
+                      <option value="germany">Germany</option>
+                      <option value="poland">Poland</option>
+                      <option value="switzerland">Switzerland</option>
+                      <option value="netherlands">Netherlands</option>
+                      <option value="norway">Norway</option>
+                      <option value="sweden">Sweden</option>
+                      <option value="finland">Finland</option>
+                      <option value="spain">Spain</option>
+                      <option value="portugal">Portugal</option>
+                      <option value="italy">Italy</option>
+                      <option value="greece">Greece</option>
+                  </optgroup>
+                  <optgroup label="Asia">
+                      <option value="ukraine">Ukraine</option>
+                      <option value="russia">Russia</option>
+                      <option value="china">China</option>
+                      <option value="japan">Japan</option>
+                      <option value="korea">South Korea</option>
+                      <option value="vietnam">Vietnam</option>
+                      <option value="india">India</option>
+                      <option value="pakistan">Pakistan</option>
+                  </optgroup>
+                  <optgroup label="Middle East">
+                      <option value="israel">Israel</option>
+                      <option value="uae">United Arab Emirates</option>
+                      <option value="arabia">Saudi Arabia</option>
+                      <option value="iran">Iran</option>
+                      <option value="iraq">Iraq</option>
+                      <option value="turkey">Turkey</option>
+                  </optgroup>
+                  <optgroup label="Pacific">
+                      <option value="aus">Australia</option>
+                      <option value="zealand">New Zealand</option>
+                      <option value="philippines">Philippines</option>
+                  </optgroup>
+              </select>
