@@ -1,3 +1,5 @@
+/* Page Setup */
+
 :root {
   /* Global Variables */
 
@@ -22,6 +24,8 @@ body {
   display: flex;
 }
 
+/* Sidebar */
+
 .sidebar {
   flex: 4 0 25vw;
   position: relative;
@@ -34,26 +38,19 @@ body {
   align-items: center;
 }
 
+/* Logo & Overlay */
+
 .logo-section {
   flex: 2 0 auto;
   display: flex;
   justify-content: center;
   text-align: center;
-}
-
-.credit-section {
-  width: 100%;
-  flex: 0 1 5vh;
-  text-align: center;
+  color: white;
 }
 
 .une-logo {
   max-height: 100px;
   width: auto;
-}
-
-.une-name {
-  color: white;
 }
 
 .transparent {
@@ -68,8 +65,12 @@ body {
   top: 10%;
 }
 
-.sign-up {
-  flex: 1 2 auto;
+/* Logo & Photo Credits */
+
+.credit-section {
+  width: 100%;
+  flex: 0 1 5vh;
+  text-align: center;
 }
 
 .photo-credit {
@@ -80,6 +81,12 @@ body {
   color: white;
 }
 
+/* Main Content */
+
+.sign-up {
+  flex: 1 2 auto;
+}
+
 .sign-up {
   display: flex;
   flex-direction: column;
@@ -88,13 +95,12 @@ body {
   background-color: gray;
 }
 
+/* Footer */
+
 footer {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-}
-
-.intro-text {
 }
 
 /* .form-container {
