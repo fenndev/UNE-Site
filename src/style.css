@@ -42,7 +42,7 @@ body {
   flex: 4 0 40vw;
   position: relative;
   height: 100%;
-  background: url(img/mil-group.jpg) no-repeat;
+  background: url(../public/img/mil-group.jpg) no-repeat;
   background-position: center;
   background-size: cover;
   display: flex;
