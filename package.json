@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/fenndev/sign-up-form/issues"
   },
-  "homepage": "https://github.com/fenndev/sign-up-form#readme"
+  "homepage": "https://github.com/fenndev/sign-up-form#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
 }
