@@ -8,5 +8,6 @@
     color: var(--une-dark-grey);
     font-size: 2.2rem;
     margin: 2rem 0;
+    margin-left: 0.5rem;
 }
 </style>

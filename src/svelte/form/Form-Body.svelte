@@ -32,6 +32,13 @@
 </div>
 
 <style lang="scss">
+
+  .form-body {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+  }
+
     .form-row {
         display: flex;
         gap: 6rem;
@@ -45,6 +52,7 @@
     label {
         font-size: 1.8rem;
         margin-bottom: 0.5rem;
+        margin-left: 0.5rem;
     }
 
     input {
