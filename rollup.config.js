@@ -13,7 +13,7 @@ export default {
     output: {
       sourcemap: true,
       name: 'app',
-      file: 'dist/bundle.js',
+      file: 'public/bundle.js',
       format: 'iife'
   },
   plugins: [
