@@ -5,7 +5,7 @@
 <aside class="sidebar">
     <div class="logo-section">
       <div class="transparent">
-        <img class="une-logo" src="../public/img/une-logo.png" alt="UNE Logo" />
+        <img class="une-logo" src="./img/une-logo.png" alt="UNE Logo" />
         <h1 class="une-text">United Nations of Earth</h1>
         <h2 class="une-subtext">Terra Firma Defense Force</h2>
       </div>
@@ -81,7 +81,7 @@ a {
   flex: 4 0 40vw;
   position: relative;
   height: 100%;
-  background: url(../public/img/mil-group.jpg) no-repeat;
+  background: url(./img/mil-group.jpg) no-repeat;
   background-position: center;
   background-size: cover;
   display: flex;
