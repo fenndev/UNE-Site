@@ -36,16 +36,19 @@
   .form-body {
       display: flex;
       flex-direction: column;
+      flex-wrap: wrap;
       gap: 2rem;
   }
 
     .form-row {
         display: flex;
+        flex-wrap: wrap;
         gap: 6rem;
     }
 
     .input-container {
         display: flex;
+        flex-wrap: wrap;
         flex-direction: column;
     }
 
