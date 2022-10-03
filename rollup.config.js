@@ -22,6 +22,8 @@ export default {
     resolve({ browser: true }),
     commonjs(),
 		typescript({ sourceMap: !production, inlineSources: !production }),
+    sass(),
+    css({ output: 'bundle.css' }),
     html({ html: 
       { lang : 'en'}, 
       link: './bundle.css', 
@@ -32,8 +34,6 @@ export default {
       ],
       script: './bundle.js', title: `UNE` 
     }),
-    sass(),
-    css({ output: 'bundle.css' }),
     copy({ assets: ['assets/'] }),
     svelte({ preprocess: preprocess(), emitCss: true })],
 };
