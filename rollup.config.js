@@ -5,6 +5,8 @@ import typescript from '@rollup/plugin-typescript';
 import preprocess from 'svelte-preprocess';
 import sass from 'rollup-plugin-sass';
 import css from 'rollup-plugin-css-only';
+import html from '@rollup/plugin-html';
+import copy from 'rollup-plugin-copy-assets';
 
 const production = !process.env.ROLLUP_WATCH
 
@@ -13,14 +15,25 @@ export default {
     output: {
       sourcemap: true,
       name: 'app',
-      file: 'public/bundle.js',
+      file: 'dist/bundle.js',
       format: 'iife'
   },
   plugins: [
     resolve({ browser: true }),
     commonjs(),
 		typescript({ sourceMap: !production, inlineSources: !production }),
+    html({ html: 
+      { lang : 'en'}, 
+      link: './bundle.css', 
+      meta: [ 
+        {charset: "UTF-8"}, 
+        {'http-equiv' : 'X-UA-Compatible', content: 'IE=edge'}, 
+        {name: 'viewport', content: 'width=device-width, initial-scale=1.0'}
+      ],
+      script: './bundle.js', title: `UNE` 
+    }),
     sass(),
     css({ output: 'bundle.css' }),
+    copy({ assets: ['assets/'] }),
     svelte({ preprocess: preprocess(), emitCss: true })],
 };
